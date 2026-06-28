@@ -1,0 +1,116 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  margin-top: 40px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.contact-form__title {
+  color: #6f8cff;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-form__subtitle {
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.contact-form__quote {
+  color: rgb(195, 195, 195);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: calc(100% - 100px);
+}
+
+.contact-form__label {
+  color: #6f8cff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+.contact-form__input {
+  width: 100%;
+  height: 54px;
+  padding: 0;
+  color: #fff;
+  background: rgba(5, 12, 24, 0.72);
+  border: 1px solid rgba(103, 132, 255, 0.25);
+  border-radius: 14px;
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.contact-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.contact-form__input:focus {
+  border-color: #5f7cff;
+  box-shadow: 0 0 0 3px rgba(95, 124, 255, 0.18);
+}
+
+.contact-form__error {
+  color: red;
+  text-align: center !important;
+  margin: 0;
+}
+
+.contact-form__success {
+  color: green;
+  text-align: center !important;
+  margin: 0;
+}
+
+.contact-form__button {
+  height: 56px;
+  border: 0;
+  border-radius: 14px;
+  width: 100%;
+
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #3157ff, #5f7cff);
+
+  box-shadow:
+    0 0 18px rgba(79, 105, 255, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.contact-form__privacy{
+  margin: 0;
+  color: rgb(195, 195, 195);
+  font-size: 10px;
+}
+
+.contact-form__privacy a{
+  text-decoration: none;
+  text-transform: none;
+   color: rgb(195, 195, 195);
+}
+
+.turnstile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: calc(100% - 100px);
+}

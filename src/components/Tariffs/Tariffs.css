@@ -1,0 +1,288 @@
+.tariffs{
+  background-color: #07111f;
+  z-index: 10;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+
+}
+
+.tariffs__block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.tariffs__title{
+  text-align: left;
+  margin: 0;
+  color: white;
+  font-size: 34px;
+  
+}
+
+.tariffs__subtitle{
+  text-align: left;
+  margin: 0;
+  color: rgb(195, 195, 195);
+  font-size: 20px;
+}
+
+.tariff-card{
+  display: flex;
+  flex-direction: column;
+   padding: 15px;
+   background-color: #09172b;
+   border-radius: 15px;
+   border: 1px solid #0e2b53;
+   height: 249px;
+   position: relative;
+}
+
+.tariffs__list{
+  margin: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 279px;
+  margin-top: 40px;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: end;
+  align-items: end;
+}
+
+.tariff-card__image{
+  max-width: 150px;
+  margin: 0 auto;
+  max-height: 130px;
+}
+
+.tariff-card__title{
+  
+  color: white;
+  margin: 0;
+  text-align: left;
+  font-weight: 600;
+   text-shadow:
+        0 0 4px rgba(255, 255, 255, 0.35),
+        0 0 12px rgba(89, 121, 255, 0.25);
+}
+
+.tariff-card__subtitle{
+  margin: 0;
+    font-size: 34px;
+    color: #5a7dff;
+    font-weight: 700;
+    text-align: left;
+        text-shadow:
+        0 0 4px rgba(90, 125, 255, 0.9),
+        0 0 0px rgba(90, 125, 255, 0.15);
+    
+}
+
+.tariff-card__list{
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  gap: 10px;
+
+ 
+}
+
+.tariff-card__item{
+  color: rgb(195, 195, 195);
+  margin: 0;
+  
+}
+
+.tariff-card__special{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  background-color: #5a7dff;
+  border: 2px solid #5a7dff;
+  border-radius: 30px;
+  padding: 2px 5px;
+  top: -15px;
+  right: 50%;
+  transform: translateX(50%);
+    box-shadow:
+        0 0 4px rgba(90, 125, 255, 0.9),
+        0 0 15px rgba(90, 125, 255, 0.45),
+        0 0 40px rgba(90, 125, 255, 0.15);
+ text-shadow:
+        0 0 4px rgba(255, 255, 255, 0.35),
+        0 0 12px rgba(89, 121, 255, 0.25);
+}
+
+#special{
+  border: 2px solid #5a7dff;
+
+    box-shadow:
+        0 0 4px rgba(90, 125, 255, 0.9),
+        0 0 15px rgba(90, 125, 255, 0.45),
+        0 0 40px rgba(90, 125, 255, 0.15);
+  height: 279px;
+}
+
+@media screen and (max-width: 1320px) {
+.tariffs__title{
+    font-size: 30px;
+  }
+  .tariffs__subtitle{
+    font-size: 18px;
+  }
+  .tariffs__list{
+    margin-top: 20px;
+  }
+/* .service-card__title{
+  font-size: 20px;
+}
+.service-card__list{
+  font-size: 16px;
+} */
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .tariff-card{
+   padding: 15px;
+   max-height: 229px;
+}
+#special{
+ 
+  max-height: 249px;
+}
+.tariff-card__title{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tariff-card__subtitle{
+ 
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.tariff-card__list{}
+.tariffs__list{
+  margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 992px) {
+  .tariff-card{
+   padding: 15px;
+   max-height: 229px;
+}
+#special{
+ 
+  max-height: 249px;
+}
+  .tariffs__list{
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+  }
+  .tariff-card__title{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.tariff-card__subtitle{
+ 
+    font-size: 38px;
+    font-weight: 700;
+    
+}
+.tariffs__list{
+ gap: 25px;
+
+ 
+}
+
+.tariff-card__item{
+
+  font-size: 18px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+  .tariffs__block{
+    margin-left: 0;
+  }
+     .tariffs__title{
+    font-size: 24px;
+    text-align: center;
+  }
+  .tariffs__subtitle{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .tariff-card__title{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.tariff-card__subtitle{
+ 
+    font-size: 32px;
+    
+}
+.tariffs__list{
+ gap: 25px;
+
+ 
+}
+
+.tariff-card__item{
+
+  font-size: 14px;
+}
+}
+
+@media screen and (max-width: 560px) {
+  
+    .tariff-card{
+   padding: 10px;
+   max-height: 200px;
+}
+#special{
+ 
+  max-height: 210px;
+}
+  .tariff-card__title{
+  font-size: 30px;
+  text-align: center;
+}
+
+.tariff-card__subtitle{
+ text-align: center;
+    font-size: 34px;
+    
+}
+.tariffs__list{
+   grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin: 20px 50px;
+gap: 20px;
+ 
+}
+.tariff-card__list{
+  text-align: center;
+  margin: 0;
+}
+.tariff-card__item{
+
+  font-size: 16px;
+}
+
+}
+
+

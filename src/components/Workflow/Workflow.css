@@ -1,0 +1,231 @@
+.road{
+  display: flex;
+  flex-direction: column;
+   border-radius: 30px;
+   padding: 0;
+   margin: 0;
+   margin-top: 15px;
+   padding-bottom: 5px;
+   background-color: #07111f;
+   background-image: url(../../images/mountain.jpg);
+   background-position: 15% 40%;
+   
+}
+
+.road__block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.road__title{
+  color: white;
+  text-align: left;
+  margin: 0;
+   font-size: 34px;
+}
+
+.road__subtitle{
+  text-align: left;
+  margin: 0;
+  color: rgb(195, 195, 195);
+   font-size: 20px;
+}
+
+.road__cards{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+ /*  border: 1px solid red; */
+  margin: 0 40px;
+  gap: 35px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.road-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*  border: 1px solid red; */
+   position: relative;
+   padding: 10px;
+}
+
+.road-card__image{
+  max-width: 100px;
+  height: 80px;
+}
+
+.road-card__title{
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+
+.road-card__subtitle{
+  color: rgb(195, 195, 195);
+  font-size: 12px;
+  margin: 0;
+}
+
+.road-card__arrow{
+  position: absolute;
+  max-width: 100px;
+  top: 25%;
+  right: -60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .road__cards{
+    gap: 25px;
+  }
+
+  .road-card__arrow{
+  max-width: 80px;
+  top: 25%;
+  right: -40px;
+}
+
+.road__title{
+  font-size: 30px;
+}
+
+.road__subtitle{
+  font-size: 18px;
+}
+
+.road-card__title{
+  font-size: 15px;
+}
+
+.road-card__subtitle{
+  font-size: 11px;
+}
+}
+
+@media screen and (max-width: 992px) {
+  .road__cards{
+  grid-template-columns: repeat(3, 1fr);
+ /*  border: 1px solid red; */
+}
+.road-card__title{
+  font-size: 18px;
+}
+
+.road-card__subtitle{
+  font-size: 14px;
+}
+ .road-card__arrow{
+  max-width: 100px;
+  right: -60px;
+}
+#card3{
+  display: none;
+}
+
+.road{
+   background-position: 20% 5%;
+   
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .road__title{
+  font-size: 24px;
+  text-align: center;
+}
+
+.road__subtitle{
+  font-size: 14px;
+  text-align: center;
+}
+  .road-card__title{
+  font-size: 15px;
+}
+
+.road-card__subtitle{
+  font-size: 11px;
+}
+
+.road-card__image{
+  max-width: 90px;
+  height: 70px;
+}
+ .road-card__arrow{
+  max-width: 80px;
+  right: -40px;
+}
+.road__cards{
+gap: 15px;
+margin-bottom: 10px;
+}
+.road-card{
+ padding: 0 5px ;
+
+}
+.road{
+   background-position: 20% 20%;
+   
+}
+
+}
+
+@media screen and (max-width: 560px) {
+
+  .road-card__title{
+  font-size: 12px;
+}
+
+.road-card__subtitle{
+  font-size: 9px;
+}
+
+.road-card__image{
+  max-width: 80px;
+  height: 60px;
+}
+ .road-card__arrow{
+  max-width: 70px;
+  right: -35px;
+}
+.road__cards{
+gap: 15px;
+row-gap: 0;
+margin: 10px 20px;
+}
+.road__block{
+  margin-left: 0;
+}
+}
+
+@media screen and (max-width: 420px) {
+    .road-card__title{
+  font-size: 10px;
+}
+
+.road-card__subtitle{
+  font-size: 8px;
+}
+
+.road-card__image{
+  max-width: 60px;
+  height: 40px;
+}
+ .road-card__arrow{
+  max-width: 50px;
+  right: -20px;
+}
+.road__cards{
+gap: 5px;
+row-gap: 0;
+margin: 10px 20px;
+}
+.road__block{
+  margin-left: 0;
+}
+
+}
+
+
