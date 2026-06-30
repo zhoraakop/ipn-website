@@ -67,8 +67,7 @@
 }
 
 .main__link {
-  height: 50px;
-  width: 150px;
+  padding: 18px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,8 +175,7 @@
 
   .main__link {
     font-size: 12px;
-    max-width: 100px;
-    height: 35px;
+    padding: 12px 17px;
   }
 
   .main__list {
@@ -229,8 +227,7 @@
 
   .main__link {
     font-size: 12px;
-    max-width: 100px;
-    height: 35px;
+   
   }
   .main{
     padding: 0;

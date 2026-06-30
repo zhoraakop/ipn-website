@@ -50,7 +50,7 @@
   flex-direction: row;
   align-items: center;
   margin-left: 40px;
-  gap: 10px;
+  gap: 30px;
 }
 
 .header__phone {
@@ -60,15 +60,57 @@
 }
 
 .header__button {
-  height: 50px;
-  width: 150px;
+  padding: 18px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
   background-color: rgb(82, 52, 183);
   border: 1px solid rgb(82, 52, 183);
   border-radius: 10px;
   color: white;
+}
+
+.header__auth{
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.header__reg{
+  color: #6f8cff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: none;
+    
+}
+
+.header__log{
+  color: #6f8cff;
+    font-size: 14px;
+    font-weight: 600;
+        text-decoration: none;
+    text-transform: none;
+}
+
+.header__profile{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header__account{
+  color: #6f8cff;
+  font-size: 14px;
+}
+
+.header__email{
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1320px) {
@@ -109,7 +151,6 @@
   }
   .header__button {
     font-size: 14px;
-    max-width: 125px;
   }
 }
 
@@ -133,15 +174,31 @@
   }
   .header__block {
     margin-left: 15px;
+    gap: 15px;
   }
   .header__button {
     font-size: 12px;
-    max-width: 100px;
-    height: 35px;
+   padding: 12px 17px;
   }
   .header__image {
     max-width: 100px;
   }
+  .header__reg{
+    font-size: 11px;
+    
+}
+
+.header__log{
+    font-size: 11px;
+}
+
+
+.header__account{
+  font-size: 11px;
+}
+.header__email{
+  font-size: 12px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -158,14 +215,14 @@
   }
   .header__menu {
     gap: 10px;
+    margin-right: 10px;
   }
   .header__block {
     margin-left: 10px;
   }
-  .header__button {
-    font-size: 11px;
-    max-width: 80px;
-    height: 30px;
+  #header-button {
+    display: none;
+    
   }
   .header__image {
     max-width: 80px;

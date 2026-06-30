@@ -14,6 +14,10 @@ import Agreement from "./pages/Agreement";
 import PersonalDataConsent from "./pages/PersonalDataConsent";
 import Requisites from "./pages/Requisites";
 import Documents from "./pages/Documents";
+import Profile from "./components/Profile/Profile";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
+import { AuthProvider } from "./context/AuthContext";
 
 function Home() {
   return (
@@ -32,14 +36,22 @@ function Home() {
 
 function App() {
   return (
+    <AuthProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/agreement" element={<Agreement />} />
-        <Route path="/personal-data-consent" element={<PersonalDataConsent />} />
+        <Route
+          path="/personal-data-consent"
+          element={<PersonalDataConsent />}
+        />
         <Route path="/requisites" element={<Requisites />} />
         <Route path="/documents" element={<Documents />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/reg" element={<Register />} />
       </Routes>
+    </AuthProvider>
   );
 }
 

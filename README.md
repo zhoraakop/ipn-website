@@ -7,33 +7,40 @@
 
 ## Возможности
 
-* Адаптивная верстка
-* Современный UI в стиле SaaS / Cloud
-* Собственная дизайн-концепция
-* Форма обратной связи
-* Отправка заявок через SMTP
-* Backend на Vercel Serverless Functions
-* Защита формы через Cloudflare Turnstile
-* Валидация номера телефона
-* Юридические страницы:
-
-  * Политика конфиденциальности
-  * Пользовательское соглашение
-  * Согласие на обработку персональных данных
-  * Реквизиты компании
+- Адаптивная верстка
+- Современный UI в стиле SaaS / Cloud
+- Собственная дизайн-концепция
+- Клиентская регистрация и авторизация пользователей
+- Личный кабинет пользователя
+- Хеширование паролей (SHA-256)
+- Хранение данных пользователя в LocalStorage
+- Управление состоянием авторизации через React Context API
+- Форма обратной связи
+- Отправка заявок через SMTP
+- Backend на Vercel Serverless Functions
+- Защита формы через Cloudflare Turnstile
+- Валидация номера телефона
+- Юридические страницы:
+  - Политика конфиденциальности
+  - Пользовательское соглашение
+  - Согласие на обработку персональных данных
+  - Реквизиты компании
 
 
 
 ## Технологии
 
-* React
-* JavaScript (ES6+)
-* CSS3
-* React Router DOM
-* Vercel Functions
-* Nodemailer
-* Cloudflare Turnstile
-* libphonenumber-js
+- React
+- React Router DOM
+- React Context API
+- JavaScript (ES6+)
+- CSS3
+- Web Crypto API
+- LocalStorage API
+- Vercel Serverless Functions
+- Nodemailer
+- Cloudflare Turnstile
+- libphonenumber-js
 
 ## Установка
 

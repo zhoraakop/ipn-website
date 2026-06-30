@@ -1,5 +1,6 @@
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
+import file from "../../files/file.pdf";
 
 const Footer = () => {
   return (
@@ -53,7 +54,8 @@ const Footer = () => {
             <li className="footer__item">&#128379; +7 812 115-44-12</li>
             <li className="footer__item">&#9993; info@@ipn-agency.ru</li>
             <li className="footer__item">
-              &#x1F4CD; г. Санкт-Петербург, ул. Железноводская, д. 32, литер Д, пом. 22-Н офис.5-8
+              &#x1F4CD; г. Санкт-Петербург, ул. Железноводская, д. 32, литер Д,
+              пом. 22-Н офис.5-8
             </li>
             <li className="footer__item">&#9200; Пн-Вс: 10:00 - 19:00</li>
           </ul>
@@ -63,18 +65,23 @@ const Footer = () => {
         <p className="footer__copyright">
           &copy; 2004 ООО "Айпиэн". Все права защищены.
         </p>
-        <Link className="footer__link" to="/privacy">
-          Политика конфиденциальности
-        </Link>
-        <Link className="footer__link" to="/agreement">
-          Пользовательское соглашение
-        </Link>
-        <Link className="footer__link" to="/personal-data-consent">
-          Согласие на обработку персональных данных
-        </Link>
-        <Link className="footer__link" to="/requisites">
-          Реквизиты
-        </Link>
+        <div className="footer__links">
+          <Link className="footer__link" to="/privacy">
+            Политика конфиденциальности
+          </Link>
+          <Link className="footer__link" to="/agreement">
+            Пользовательское соглашение
+          </Link>
+          <Link className="footer__link" to="/personal-data-consent">
+            Согласие на обработку персональных данных
+          </Link>
+          <Link className="footer__link" to="/requisites">
+            Реквизиты
+          </Link>
+          <a className="footer__link" href={file} download={true}>
+            Публичная оферта
+          </a>
+        </div>
       </div>
     </div>
   );
