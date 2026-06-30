@@ -24,7 +24,11 @@ const Form = () => {
 
     const phoneNumber = parsePhoneNumberFromString(phoneValue, "RU");
 
-    if (!phoneNumber || !phoneNumber.isValid()) {
+    if (
+      !phoneNumber ||
+      !phoneNumber.isValid() ||
+      phoneNumber.country !== "RU"
+    ) {
       setError("Введите корректный номер телефона");
       setSuccess("");
       return;
@@ -105,19 +109,19 @@ const Form = () => {
         {error && <p className="contact-form__error">{error}</p>}
         {success && <p className="contact-form__success">{success}</p>}
         <div className="turnstile">
-
-        <Turnstile className="turnstile"
-          siteKey="0x4AAAAAADr6PZTP03QicDgK"
-          onSuccess={(token) => {
-            setCaptchaToken(token);
-            setError("");
-          }}
-          onExpire={() => setCaptchaToken("")}
-          onError={() => {
-            setCaptchaToken("");
-            setError("Не удалось пройти проверку");
-          }}
-        />
+          <Turnstile
+            className="turnstile"
+            siteKey="0x4AAAAAADr6PZTP03QicDgK"
+            onSuccess={(token) => {
+              setCaptchaToken(token);
+              setError("");
+            }}
+            onExpire={() => setCaptchaToken("")}
+            onError={() => {
+              setCaptchaToken("");
+              setError("Не удалось пройти проверку");
+            }}
+          />
         </div>
         <button
           className="contact-form__button"
@@ -126,13 +130,15 @@ const Form = () => {
         >
           {isSending ? "Отправка..." : "Отправить заявку"}
         </button>
-        
-  <span className="contact-form__privacy">
-   * Нажимая «Отправить заявку», вы подтверждаете согласие на обработку персональных данных в соответствии с{' '} 
-    <a href="/privacy" target="_blank" rel="noopener noreferrer">
-      Политикой конфиденциальности
-    </a>.
-  </span>
+
+        <span className="contact-form__privacy">
+          * Нажимая «Отправить заявку», вы подтверждаете согласие на обработку
+          персональных данных в соответствии с{" "}
+          <a href="/privacy" target="_blank" rel="noopener noreferrer">
+            Политикой конфиденциальности
+          </a>
+          .
+        </span>
       </form>
     </div>
   );

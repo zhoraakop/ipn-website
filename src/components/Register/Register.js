@@ -10,6 +10,10 @@ const Register = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleRegister = async (event) => {
     event.preventDefault();
 
@@ -34,6 +38,11 @@ const Register = () => {
       passwordHash,
       createdAt: new Date().toLocaleDateString("ru-RU"),
     };
+
+    if (!isValidEmail(email)) {
+      setError("Введите корректную почту");
+      return;
+    }
 
     localStorage.setItem("user", JSON.stringify(user));
     localStorage.setItem("isAuth", "true");
