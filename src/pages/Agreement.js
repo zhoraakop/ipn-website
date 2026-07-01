@@ -85,7 +85,7 @@ const Agreement = () => {
           <section className="legal-page__section">
             <h2>9. Контакты</h2>
             <p>
-              По вопросам использования сайта можно обратиться по адресу: info@ipn.ru.
+              По вопросам использования сайта можно обратиться по адресу: ipn65162@gmail.com.
             </p>
           </section>
 

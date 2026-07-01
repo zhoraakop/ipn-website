@@ -52,7 +52,7 @@ const Footer = () => {
           <h2 className="footer__title">Контакты</h2>
           <ul className="footer__list">
             <li className="footer__item">&#128379; +7 812 115-44-12</li>
-            <li className="footer__item">&#9993; info@@ipn-agency.ru</li>
+            <li className="footer__item">&#9993; ipn65162@gmail.com</li>
             <li className="footer__item">
               &#x1F4CD; г. Санкт-Петербург, ул. Железноводская, д. 32, литер Д,
               пом. 22-Н офис.5-8

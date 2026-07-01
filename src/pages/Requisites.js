@@ -35,7 +35,7 @@ const Requisites = () => {
               </div>
               <div className="legal-page__meta-row">
                 <strong>E-mail</strong>
-                <span>info@ipn.ru</span>
+                <span>ipn65162@gmail.com</span>
               </div>
             </div>
 
